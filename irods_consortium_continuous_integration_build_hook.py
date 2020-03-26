@@ -91,5 +91,8 @@ if __name__ == '__main__':
     parser.add_option('--output_root_directory')
     parser.add_option('--irods_packages_root_directory')
     options, _ = parser.parse_args()
+    print('args for building update_collection_mtime:')
+    print(options.output_root_directory)
+    print(options.irods_packages_root_directory)
 
     main(options.output_root_directory, options.irods_packages_root_directory)
